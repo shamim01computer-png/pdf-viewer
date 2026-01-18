@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Viewer</title>
+  <style>
+    body {
+      background-color: #d7f3e3; /* হালকা সবুজ ব্যাকগ্রাউন্ড */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    iframe {
+      width: 80%;
+      height: 80%;
+      border: 2px solid #4caf50;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.print()">🖨️ Print</button>
+
+  <!-- নিচের লিংকটা তোমার নিজের PDF লিংক দিয়ে বদলে দাও -->
+  <iframe src="https://cdn.statically.io/gh/shamim01computer-png/my-pdf/main/আরমান%20আলী.pdf"></iframe>
+</body>
+</html>
