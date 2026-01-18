@@ -6,44 +6,54 @@
   <title>PDF Viewer</title>
   <style>
     body {
-      background-color: #edf7e9; /* হালকা সবুজ ব্যাকগ্রাউন্ড */
+      background-color: #eef7e4; /* হালকা সবুজাভ রঙ (ছবির মতো) */
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
       margin: 0;
-      height: 100vh;
+      padding: 20px;
+      font-family: "Noto Sans Bengali", sans-serif;
     }
+
+    /* প্রিন্ট বোতাম */
     .print-btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #3578e5; /* নীল ব্যাকগ্রাউন্ড */
+      gap: 10px;
+      background-color: #2f7de1; /* নীল রঙ */
       color: white;
-      border: none;
-      border-radius: 12px;
-      padding: 14px 32px;
-      font-size: 28px;
+      font-size: 38px;
       font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      padding: 18px 50px;
+      box-shadow: 6px 6px 0px #265fb0; /* নিচে নীল ছায়া */
       cursor: pointer;
-      box-shadow: 4px 4px 0px #2a5bb0;
-      margin-top: 20px;
+      margin-top: 40px;
+      transition: 0.2s ease;
     }
+
     .print-btn:hover {
-      background-color: #2a5bb0;
+      background-color: #256bd0;
+      box-shadow: 6px 6px 0px #1e4f91;
     }
+
     iframe {
-      margin-top: 20px;
-      width: 85%;
+      margin-top: 40px;
+      width: 90%;
       height: 80vh;
-      border: 3px solid #3578e5;
+      border: 3px solid #2f7de1;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
 <body>
   <button class="print-btn" onclick="window.print()">🖨️ প্রিন্ট</button>
-  
+
   <iframe src="https://raw.githack.com/shamim01computer-png/my-pdf/main/আরমান%20আলী.pdf"></iframe>
 </body>
 </html>
